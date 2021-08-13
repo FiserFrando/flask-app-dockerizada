@@ -11,7 +11,7 @@ def home():
 @app.route("/users", methods=['GET'])
 def users_list():
     return jsonify({"users": users})
-
+  
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=7898, debug=True)

@@ -4,9 +4,9 @@ FROM alpine:3.14
 
 # 2. Dentro del sistema (alpine) instalaremos python y pip. Alpine utiliza apk como admin de paquetes del sistema
 
-RUN apk update && apk add python3 && apk add --update py-pip && pip3 install --upgrade pip
+RUN  apk add python3 && apk add --update py-pip && pip3 install --upgrade pip
 
-
+# apk update &&
 # --no-cache: para no utilizar la memoria cache en caso de que tenga algun paquete. metodo preventivo, no es obligatorio.
 # python3-dev: instala tanto python3 como pip
 # pip3 install --upgrade pip: desde pip3 instalamos la version actualizada de pip
